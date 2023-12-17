@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json.schemastore.org/package",
+  "name": "@affixapi/starter-kit",
+  "version": "0.0.1",
+  "scripts": {
+    "prepare": "if [ -z \"$GITHUB_ACTIONS\" ] && [ -z \"$CODEBUILD_BUILD_ARN\" ]; then npx husky install; fi"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "16.2.4",
+    "@commitlint/config-angular": "16.2.4",
+    "husky": "8.0.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
+  }
+}

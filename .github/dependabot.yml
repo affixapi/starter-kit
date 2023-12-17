@@ -1,0 +1,26 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    assignees:
+      - skilbjo
+    rebase-strategy: auto
+    versioning-strategy: increase
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: fix
+      include: scope
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    assignees:
+      - skilbjo
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: fix
+      include: scope

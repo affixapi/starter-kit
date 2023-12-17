@@ -1,0 +1,42 @@
+{
+  "$schema":"https://json.schemastore.org/package",
+  "name": "@affixapi/starter-kit",
+  "version": "0.0.1",
+  "repository": "github:affixapi/starter-kit.git",
+  "scripts": {
+    "depcheck": "depcheck",
+    "eslint": "eslint .",
+    "lint": "npm run eslint",
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skilbjo",
+  "keywords": [
+    "api",
+    "openapi",
+    "affixapi",
+    "sdk"
+  ],
+  "dependencies": {
+    "@affixapi/api-with-joi": "1.0.0",
+    "axios": "0.27.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "18.2.0",
+    "@types/node": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "5.61.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "depcheck": "1.4.3",
+    "eslint": "8.42.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-typescript": "3.0.0",
+    "eslint-import-resolver-typescript": "3.5.5",
+    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "@types/joi": "17.2.3",
+    "ts-node": "10.9.1",
+    "typescript": "5.1.6"
+  }
+}

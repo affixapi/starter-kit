@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+api_version='2023-03-01'
+
+url="https://dev.api.affixapi.com/${api_version}" # dev
+# url="https://api.affixapi.com/${api_version}" # prod
+
+mode='developer'
+
+token="${1:-''}" # pass your access token here as an argument or paste it between the single quotes
+paryunId="${2:-''}" # pass your paryunId here (example: '113-6395825-8625024') as an argument or paste it between the single quotes
+
+payrunDetails() {
+  curl --fail \
+    -X GET \
+    -H "Authorization: Bearer $token" \
+    -H "Affix-Api-Origin: starter-kit" \
+    "${url}/${mode}/payruns/${paryunId}" \
+}
+
+payrunDetails

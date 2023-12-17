@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 18",
+  "_version": "18.2.0",
+  "extends": "@tsconfig/node18/tsconfig.json",
+
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "lib": [
+      "ES2023"
+    ],
+    "outDir": "dist",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "include": [
+    ".eslintrc.js",
+    "jest.config.js",
+    "utils.ts",
+    "src.ts",
+    "test.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 18",
+  "_version": "18.2.0",
+  "extends": "@tsconfig/node18/tsconfig.json",
+
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "baseUrl": "./",
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "start.ts",
+    ".eslintrc.js"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

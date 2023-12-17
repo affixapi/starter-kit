@@ -1,0 +1,72 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  sdk-example:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./sdk-example
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # keep it as `secrets.GITHUB_TOKEN` as repo is public and this token has limited privs
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: sdk-example/.nvmrc
+          cache: npm
+          cache-dependency-path: sdk-example/package-lock.json
+
+      - uses: cycjimmy/semantic-release-action@v4.0.0
+        with:
+          working_directory: ./sdk-example
+          dry_run: true
+          semantic_version: 18
+          extra_plugins: |
+            @semantic-release/exec@6.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # keep it as `secrets.GITHUB_TOKEN` as repo is public and this token has limited privs
+
+  jest-mocks:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./jest-mocks
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # keep it as `secrets.GITHUB_TOKEN` as repo is public and this token has limited privs
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: jest-mocks/.nvmrc
+          cache: npm
+          cache-dependency-path: jest-mocks/package-lock.json
+
+      - uses: cycjimmy/semantic-release-action@v4.0.0
+        with:
+          working_directory: ./jest-mocks
+          semantic_version: 18
+          extra_plugins: |
+            @semantic-release/exec@6.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # keep it as `secrets.GITHUB_TOKEN` as repo is public and this token has limited privs

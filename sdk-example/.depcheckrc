@@ -1,0 +1,7 @@
+ignores: [
+  '@tsconfig/node18',
+  '@types/node',
+  'eslint-plugin-node',
+  'ts-node',
+  'joi'
+]

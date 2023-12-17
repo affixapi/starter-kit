@@ -6,7 +6,7 @@
     "prepare": "if [ -z \"$GITHUB_ACTIONS\" ] && [ -z \"$CODEBUILD_BUILD_ARN\" ]; then npx husky install; fi"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.4",
+    "@commitlint/cli": "18.4.3",
     "@commitlint/config-angular": "16.2.4",
     "husky": "8.0.3"
   },

@@ -1,0 +1,21 @@
+title Affix API OAuth 2.0 Flow (Simplified)
+
+actor "HR/Payroll Admin" as User
+participant "Developer\nWagestream, etc" as Developer
+participant "Affix API Frontend\nconnect.affixapi.com" as Connect
+participant "Affix API\nbackend" as Backend
+participant "Provider\nMoorepay, Sage Payroll, etc" as Provider
+
+==auth==
+Developer->User:provide connect url + redirect uri
+User->Connect:connect.affixapi.com?redirect_uri=...&scopes=...
+Connect->Backend:login details
+Backend->Provider:authenticate user
+Provider->Backend:success
+Backend->Connect:success
+Connect->Developer: success, redirect via redirect_uri w/ &authorization_code=...
+==token==
+
+Developer->Backend:       -X POST /token \n{ authorization_code: "...." }
+==data==
+Developer->Backend:-X GET /employees

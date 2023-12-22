@@ -3,7 +3,6 @@
 <p align="center">
   <a href="https://affixapi.com">
     <video src = "./../dev-resources/connect.mp4" playsinline autoplay muted loop width = 300px>
-
   </a>
 </p>
 
@@ -70,6 +69,18 @@ API aggregator mode), `developer` (Layer 2 integrations / "God mode")
 //   - `&tags=uk fr payroll`
 - tags // optional
 ```
+
+## Sequence Diagram (Simplified)
+
+<p align="center">
+  <img src = "./../dev-resources/affix-api-oauth-simplified.png" width = 300px>
+</p>
+
+## Sequence Diagram (Full)
+
+<p align="center">
+  <img src = "./../dev-resources/affix-api-oauth.png" width = 300px>
+</p>
 
 ## Appendix
 ### Glossary

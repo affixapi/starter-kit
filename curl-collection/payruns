@@ -11,14 +11,14 @@ mode='developer'
 token="${1:-''}" # pass your access token here as an argument or paste it between the single quotes
 
 payruns() {
-  local start_date='2022-04-01' # set this as you'd like
-  local end_date='2022-04-30' # set this as you'd like
+  local start_date='2023-11-01' # set this as you'd like
+  local end_date='2023-11-30' # set this as you'd like
 
   curl --fail \
     -X GET \
     -H "Authorization: Bearer $token" \
     -H "Affix-Api-Origin: starter-kit" \
-    "${url}/${mode}/payruns?start_date=${start_date}&end_date=${end_date}" \
+    "${url}/${mode}/payruns?start_date=${start_date}&end_date=${end_date}"
 }
 
 payruns

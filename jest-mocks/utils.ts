@@ -1,4 +1,8 @@
-import { AxiosError, AxiosResponseHeaders } from 'axios';
+import type {
+  AxiosResponseHeaders,
+  InternalAxiosRequestConfig,
+  AxiosHeaders,
+} from 'axios';
 
 /*
  * axiosErr 3xx/4xx/5xx errors look like this:
@@ -17,18 +21,19 @@ import { AxiosError, AxiosResponseHeaders } from 'axios';
 
 export type ErrorProps = {
   code?: string; // for axios errors, ie `ECONNABORTED` | `ENOTFOUND`
-  config?: Record<string, unknown>;
+  config?: InternalAxiosRequestConfig;
   data?: Record<string, unknown>;
   headers?: AxiosResponseHeaders;
   status?: number;
   statusText?: string;
 };
 
-export class HttpError extends Error implements AxiosError {
+// export class HttpError extends Error implements AxiosError {
+export class HttpError extends Error {
   public readonly response?: Omit<Required<ErrorProps>, 'code'>;
   public readonly isAxiosError: boolean;
   public readonly toJSON: () => object;
-  public readonly config: Record<string, unknown>;
+  public readonly config: InternalAxiosRequestConfig;
   public readonly code: string | undefined;
 
   constructor(props: ErrorProps) {
@@ -53,13 +58,13 @@ export class HttpError extends Error implements AxiosError {
         this.response && this.response.status ? this.response.status : null,
     });
 
-    this.config = {};
+    this.config = {} as InternalAxiosRequestConfig;
 
     this.response = !props.code
       ? {
-          config: this.config,
+          config: this.config as InternalAxiosRequestConfig,
           data: props.data || {},
-          headers: {},
+          headers: {} as AxiosHeaders,
           status: props.status || 500,
           statusText: props.statusText || 'Error',
         }

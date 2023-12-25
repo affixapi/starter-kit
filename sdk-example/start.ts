@@ -1,6 +1,7 @@
 #!/usr/bin/env -S npx ts-node -P tsconfig.json
 import * as api from '@affixapi/api-with-joi';
-import { default as axios, AxiosResponse } from 'axios';
+import axios from 'axios';
+import type { AxiosResponse } from 'axios';
 import joi from 'joi';
 
 const apiVersion = '2023-03-01';

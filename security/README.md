@@ -156,3 +156,9 @@ architecture: AWS API Gateway, AWS Lambda, AWS DynamoDB.
 ## Contact us
 
 If you have any questions, please contact us at john[at]affixapi.com
+
+## Unit test coverage
+
+<p align="center">
+  <img src = "./../dev-resources/unit-test-coverage.png" width = 700px>
+</p>

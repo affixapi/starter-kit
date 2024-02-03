@@ -7,27 +7,24 @@
 ## Starter kit resources
 
 - [Connect guide](./connect): examples on how to use [Connect](https://dev.connect.affixapi.com/?client_id=3FDAEDF9-1DCA4F54-87949F6A-41027643&mode=payroll&scope=/2023-03-01/payroll/identity%20/2023-03-01/payroll/employees%20/2023-03-01/payroll/payruns%20/2023-03-01/payroll/payruns/:payrun_id%20&redirect_uri=https://affixapi.com&sandbox=true)
-- [SDK usage example](./sdk-example): examples on how to use the [SDK](https://www.npmjs.com/package/@affixapi/api)
+- [Typescript SDK usage example](./sdk-example): examples on how to use the [Typescript SDK](https://www.npmjs.com/package/@affixapi/api)
 - [curl collection](./curl-collection): example scripts calling the api with `curl`
 - [jest mocks](./jest-mocks): example jest mocks to test specific scenarios of `affixapi` responses
 
-## Authenticating with affixapi
+## SDKs
 
-- Go [register](https://register.affixapi.com/) to purchase API key(s).
-- You will receive your `client_id` (your license key) in the email you specified.
-- You may cancel at anytime using the management link sent to your email.
-- Your `client_secret` will be initially set as your `client_id` (the same
-  value). Setting this value provents authorized parties from generating access
-  tokens under your client id (ie a billing concern), but otherwise is not a
-  security concern.
-- Your `redirect_uri` will be initially set as `https://affixapi.com`. You may
-  set multiple `redirect_uri`s
-- The name of your application will be initially set as your emaill address.
+### Frontend
+- [React](https://www.npmjs.com/package/@affixapi/connect-sdk)
 
-After self-signup, please email me to set these values for your client application:
-- `client_secret` (I will generate a unique value)
-- `redirect_uri` (you may send me multiple uris)
-- `name` (your application name)
+### Backend
+- [Typescript](https://www.npmjs.com/package/@affixapi/api)
+- [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
+
+## Read our documentation
+
+- [API Reference](https://docs.affixapi.com/)
+
+## Launch
 
 With your `client_id` key, you are ready to start the authenticate flow with
 live users. Using [Connect](./connect) successfully will generate an
@@ -37,10 +34,6 @@ scripts](./curl-collection) to obtain an `access_token`. With the
 
 In all API calls to you must include the API key in the `Authorization` header:
 `"Authorization" : "Bearer <Access_Token>"`.
-
-## Read our documentation
-
-- [API Reference](https://docs.affixapi.com/)
 
 ## Get in touch
 - [Send us a message](mailto:hello@affixapi.com) to talk to our development team

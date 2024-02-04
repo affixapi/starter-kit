@@ -21,6 +21,7 @@
 - [Typescript](https://www.npmjs.com/package/@affixapi/api)
 - [Typescript with Joi](https://www.npmjs.com/package/@affixapi/api-with-joi)
 - [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
+- Javascript - available upon request
 - Python - available upon request
 - C# + .NET - available upon request
 

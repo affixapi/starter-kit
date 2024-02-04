@@ -27,7 +27,7 @@
 
 ### Frontend
 - [React](https://www.npmjs.com/package/@affixapi/connect-sdk)
-- [Other - HTML](https://github.com/affixapi/starter-kit?tab=readme-ov-file#html-snippet)
+- [HTML](https://github.com/affixapi/starter-kit?tab=readme-ov-file#html-snippet)
 
 ### HTML snippet
 

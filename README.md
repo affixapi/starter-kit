@@ -11,18 +11,37 @@
 - [curl collection](./curl-collection): example scripts calling the api with `curl`
 - [jest mocks](./jest-mocks): example jest mocks to test specific scenarios of `affixapi` responses
 
-## SDKs
+## Read our documentation
 
-### Frontend
-- [React](https://www.npmjs.com/package/@affixapi/connect-sdk)
+- [API Reference](https://docs.affixapi.com/)
+
+## SDKs
 
 ### Backend
 - [Typescript](https://www.npmjs.com/package/@affixapi/api)
 - [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
 
-## Read our documentation
+### Frontend
+- [React](https://www.npmjs.com/package/@affixapi/connect-sdk)
+- [Other - HTML](#HTML snippet)
 
-- [API Reference](https://docs.affixapi.com/)
+### HTML snippet
+
+```html
+<html>
+  <button type="button">
+    <a target="popup" href='https://dev.connect.affixapi.com/?client_id=[YOUR CLIENT ID]&mode=developer&scope=/2023-03-01/developer/company%20/2023-03-01/developer/identity%20/2023-03-01/developer/employee%20/2023-03-01/developer/employees%20/2023-03-01/developer/timesheets%20/2023-03-01/developer/time-off-entries%20/2023-03-01/developer/time-off-balances%20/2023-03-01/developer/payruns%20/2023-03-01/developer/payruns/:payrun_id%20/2023-03-01/developer/work-locations%20/2023-03-01/developer/groups%20&redirect_uri=https://affixapi.com'>
+      Connect your HR/Payroll
+    </a>
+  </button>
+</html>
+```
+
+=>
+
+<a href="https://affixapi.com">
+  <img src="./dev-resources/html-snippet.png" width="200px" border="1" >
+</a>
 
 ## Launch
 

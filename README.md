@@ -40,7 +40,7 @@
 =>
 
 <a href="https://affixapi.com">
-  <img src='./dev-resources/html-snippet.png' width='200px' style='border:1px solid #000000' >
+  <img src='./dev-resources/html-snippet.png' width='200px' border='1' style='border:1px solid #000000' >
 </a>
 
 ## Launch

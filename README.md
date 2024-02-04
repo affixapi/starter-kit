@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://affixapi.com">
-    <img src = "./dev-resources/Word__logo.png" width = 200px>
+    <img src='./dev-resources/Word__logo.png' width='200px'>
   </a>
 </p>
 
@@ -40,7 +40,7 @@
 =>
 
 <a href="https://affixapi.com">
-  <img src="./dev-resources/html-snippet.png" width="200px" border="1" >
+  <img src='./dev-resources/html-snippet.png' width='200px' style='border:1px solid #000000' >
 </a>
 
 ## Launch

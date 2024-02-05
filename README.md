@@ -22,7 +22,7 @@
 - [Typescript with Joi runtime validations](https://www.npmjs.com/package/@affixapi/api-with-joi)
 - [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
 - [Java](https://github.com/affixapi/java-sdk)
-- [Python](https://github.com/affixapi/python-sdk)
+- [Python](https://pypi.org/p/affixapi/)
 - [C# + .NET](https://github.com/affixapi/csharp-netcore-sdk)
 
 ### Frontend

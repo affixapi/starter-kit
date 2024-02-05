@@ -6,7 +6,7 @@
 
 ## Starter kit resources
 
-- [Connect guide](./connect): examples on how to use [Connect](https://dev.connect.affixapi.com/?client_id=3FDAEDF9-1DCA4F54-87949F6A-41027643&mode=payroll&scope=/2023-03-01/payroll/identity%20/2023-03-01/payroll/employees%20/2023-03-01/payroll/payruns%20/2023-03-01/payroll/payruns/:payrun_id%20&redirect_uri=https://affixapi.com&sandbox=true)
+- [Connect guide](./connect): examples on how to use Connect
 - [Typescript SDK usage example](./sdk-example): examples on how to use the [Typescript SDK](https://www.npmjs.com/package/@affixapi/api)
 - [curl collection](./curl-collection): example scripts calling the api with `curl`
 - [jest mocks](./jest-mocks): example jest mocks to test specific scenarios of `affixapi` responses

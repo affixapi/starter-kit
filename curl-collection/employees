@@ -6,14 +6,14 @@ api_version='2023-03-01'
 url="https://dev.api.affixapi.com/${api_version}" # dev
 # url="https://api.affixapi.com/${api_version}" # prod
 
-# mode='developer'
-mode='official'
+mode='developer'
+# mode='official'
 
 token="${1:-''}" # pass your access token here as an argument or paste it between the single quotes
 
 employees() {
-  # curl --fail \
-  curl -i \
+  # curl -i \
+  curl --fail \
     -H "Authorization: Bearer $token" \
     -H "Affix-Api-Origin: starter-kit" \
     -X GET \

@@ -10,7 +10,6 @@ client_id='' # your client id
 client_secret='' # your client secret
 
 tokens() {
-  set -x
   curl --fail "${url}/management/tokens" \
     -X GET \
     -H "Authorization: Basic $(echo -n "${client_id}:${client_secret}" | base64)" \

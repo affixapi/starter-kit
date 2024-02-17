@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+api_version='2023-03-01'
+
+url="https://dev.api.affixapi.com/${api_version}" # dev
+# url="https://api.affixapi.com/${api_version}" # prod
+
+client_id='' # your client id
+client_secret='' # your client secret
+
+tokens() {
+  set -x
+  curl --fail "${url}/management/tokens" \
+    -X GET \
+    -H "Authorization: Basic $(echo -n "${client_id}:${client_secret}" | base64)" \
+    -H "Affix-Api-Origin: starter-kit"
+}
+
+tokens

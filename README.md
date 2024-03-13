@@ -25,6 +25,7 @@
 - [Python](https://pypi.org/p/affixapi/)
 - [Ruby](https://github.com/affixapi/ruby-sdk)
 - [C# + .NET](https://github.com/affixapi/csharp-netcore-sdk)
+- [PHP](https://packagist.org/packages/affixapi/api)
 
 ### Frontend
 - [React](https://www.npmjs.com/package/@affixapi/connect-sdk)

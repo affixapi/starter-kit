@@ -21,10 +21,10 @@
 - [Typescript](https://www.npmjs.com/package/@affixapi/api)
 - [Typescript with Joi runtime validations](https://www.npmjs.com/package/@affixapi/api-with-joi)
 - [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
-- [Java](https://github.com/affixapi/java-sdk)
+- [Java](https://central.sonatype.com/artifact/com.affixapi/api)
 - [Python](https://pypi.org/p/affixapi/)
-- [Ruby](https://github.com/affixapi/ruby-sdk)
-- [C# + .NET](https://github.com/affixapi/csharp-netcore-sdk)
+- [Ruby](https://rubygems.org/gems/affixapi)
+- [C# + .NET](https://www.nuget.org/packages/AffixApi.Api)
 - [PHP](https://packagist.org/packages/affixapi/api)
 
 ### Frontend

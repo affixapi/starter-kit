@@ -6,7 +6,8 @@ api_version='2023-03-01'
 url="https://dev.api.affixapi.com/${api_version}" # dev
 # url="https://api.affixapi.com/${api_version}" # prod
 
-mode='developer'
+mode='xhr'
+# mode='official'
 
 token="${1:-''}" # pass your access token here as an argument or paste it between the single quotes
 

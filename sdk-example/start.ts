@@ -1,5 +1,5 @@
 #!/usr/bin/env -S npx ts-node -P tsconfig.json
-import * as api from '@affixapi/api-with-joi';
+import * as api from '@affixapi/api';
 import axios from 'axios';
 import type { AxiosResponse } from 'axios';
 import joi from 'joi';
@@ -21,7 +21,7 @@ if (!ACCESS_TOKEN)
 const authorizationHeaderValue = `Bearer ${ACCESS_TOKEN}`; // `Key` if dev or prod, `Sandbox` if sandbox
 const authorizationHeader = { Authorization: authorizationHeaderValue };
 
-/** mode = Developer */
+/** mode = xhr */
 
 // types
 type Identity = api.v20230301.IdentityResponse;
@@ -33,13 +33,13 @@ type Payslips = api.v20230301.Payslips;
 const getIdentity = async (): Promise<Identity> => {
   const response = await axios.request<AxiosResponse<Identity>>({
     method: 'GET',
-    url: `${BASE_URL}/developer/identity`,
+    url: `${BASE_URL}/xhr/identity`,
     headers: { ...authorizationHeader },
   });
 
   return handleResponse<Identity>({
     response,
-    joiType: api.joi.v20230331.identity,
+    joiType: api.joi.v20230331.identity as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -47,13 +47,13 @@ const getIdentity = async (): Promise<Identity> => {
 const getEmployees = async (): Promise<Employees> => {
   const response = await axios.request<AxiosResponse<Employees>>({
     method: 'GET',
-    url: `${BASE_URL}/developer/employees`,
+    url: `${BASE_URL}/xhr/employees`,
     headers: { ...authorizationHeader },
   });
 
   return handleResponse<Employees>({
     response,
-    joiType: api.joi.v20230331.employees,
+    joiType: api.joi.v20230331.employees as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -64,13 +64,13 @@ const getPayruns = async (): Promise<Payruns> => {
 
   const response = await axios.request<AxiosResponse<Payruns>>({
     method: 'GET',
-    url: `${BASE_URL}/developer/payruns?start_date=${startDate}&end_date=${endDate}`,
+    url: `${BASE_URL}/xhr/payruns?start_date=${startDate}&end_date=${endDate}`,
     headers: { ...authorizationHeader },
   });
 
   return handleResponse<Payruns>({
     response,
-    joiType: api.joi.v20230331.payruns,
+    joiType: api.joi.v20230331.payruns as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -84,13 +84,13 @@ const payrunDetails = async ({
 
   const response = await axios.request<AxiosResponse<api.v20230301.Payslips>>({
     method: 'GET',
-    url: `${BASE_URL}/developer/payruns/${payrunId}`,
+    url: `${BASE_URL}/xhr/payruns/${payrunId}`,
     headers: { ...authorizationHeader },
   });
 
   return handleResponse<Payslips>({
     response,
-    joiType: api.joi.v20230331.payslips,
+    joiType: api.joi.v20230331.payslips as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 

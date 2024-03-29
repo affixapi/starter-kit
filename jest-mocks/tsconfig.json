@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 18",
-  "_version": "18.2.0",
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "display": "Node 20",
+  "_version": "20.1.3",
+  "extends": "@tsconfig/node20/tsconfig.json",
 
   "compilerOptions": {
     "module": "CommonJS",

@@ -36,7 +36,7 @@
 ```html
 <html>
   <button type="button">
-    <a target="popup" href='https://dev.connect.affixapi.com/?client_id=[YOUR CLIENT ID]&mode=developer&scope=/2023-03-01/developer/company%20/2023-03-01/developer/identity%20/2023-03-01/developer/employee%20/2023-03-01/developer/employees%20/2023-03-01/developer/timesheets%20/2023-03-01/developer/time-off-entries%20/2023-03-01/developer/time-off-balances%20/2023-03-01/developer/payruns%20/2023-03-01/developer/payruns/:payrun_id%20/2023-03-01/developer/work-locations%20/2023-03-01/developer/groups%20&redirect_uri=https://affixapi.com'>
+    <a target="popup" href='https://dev.connect.affixapi.com/?client_id=[YOUR CLIENT ID]&mode=xhr&scope=/2023-03-01/xhr/company%20/2023-03-01/xhr/identity%20/2023-03-01/xhr/employee%20/2023-03-01/xhr/employees%20/2023-03-01/xhr/timesheets%20/2023-03-01/xhr/time-off-entries%20/2023-03-01/xhr/time-off-balances%20/2023-03-01/xhr/payruns%20/2023-03-01/xhr/payruns/:payrun_id%20/2023-03-01/xhr/work-locations%20/2023-03-01/xhr/groups%20&redirect_uri=https://affixapi.com'>
       Connect your HR/Payroll
     </a>
   </button>

@@ -18,7 +18,7 @@
 ## SDKs
 
 ### Backend
-- [Typescript](https://www.npmjs.com/package/@affixapi/api)
+- [Typescript](https://www.npmjs.com/package/@affixapi/api-no-joi)
 - [Typescript with Joi runtime validations](https://www.npmjs.com/package/@affixapi/api-with-joi)
 - [Go](https://pkg.go.dev/github.com/affixapi/go-sdk)
 - [Java](https://central.sonatype.com/artifact/com.affixapi/api)

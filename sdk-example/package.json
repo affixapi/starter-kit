@@ -18,7 +18,7 @@
     "sdk"
   ],
   "dependencies": {
-    "@affixapi/api": "npm:@affixapi/api-with-joi@1.1.60",
+    "@affixapi/api": "npm:@affixapi/api-with-joi@1.1.66",
     "axios": "1.6.8"
   },
   "devDependencies": {

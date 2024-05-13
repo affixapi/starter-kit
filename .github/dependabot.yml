@@ -4,7 +4,24 @@ updates:
   - package-ecosystem: npm
     registries:
       - npm-github
-    directory: /
+    directory: /sdk-example
+    schedule:
+      interval: daily
+    assignees:
+      - skilbjo
+    rebase-strategy: auto
+    allow:
+      - dependency-name: '@affixapi/*'
+    versioning-strategy: increase
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: fix
+      include: scope
+
+  - package-ecosystem: npm
+    registries:
+      - npm-github
+    directory: /jest-mocks
     schedule:
       interval: daily
     assignees:

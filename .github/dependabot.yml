@@ -2,8 +2,6 @@ version: 2
 
 updates:
   - package-ecosystem: npm
-    registries:
-      - npm-github
     directory: /sdk-example
     schedule:
       interval: daily
@@ -19,8 +17,6 @@ updates:
       include: scope
 
   - package-ecosystem: npm
-    registries:
-      - npm-github
     directory: /jest-mocks
     schedule:
       interval: daily

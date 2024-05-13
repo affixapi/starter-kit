@@ -2,6 +2,23 @@ version: 2
 
 updates:
   - package-ecosystem: npm
+    registries:
+      - npm-github
+    directory: /
+    schedule:
+      interval: daily
+    assignees:
+      - skilbjo
+    rebase-strategy: auto
+    allow:
+      - dependency-name: '@affixapi/*'
+    versioning-strategy: increase
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: fix
+      include: scope
+
+  - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly

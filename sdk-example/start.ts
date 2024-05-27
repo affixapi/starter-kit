@@ -39,7 +39,7 @@ const getIdentity = async (): Promise<Identity> => {
 
   return handleResponse<Identity>({
     response,
-    joiType: api.joi.v20230331.identity as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    joiType: api.joi.v20230301.identity as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -53,7 +53,7 @@ const getEmployees = async (): Promise<Employees> => {
 
   return handleResponse<Employees>({
     response,
-    joiType: api.joi.v20230331.employees as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    joiType: api.joi.v20230301.employees as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -70,7 +70,7 @@ const getPayruns = async (): Promise<Payruns> => {
 
   return handleResponse<Payruns>({
     response,
-    joiType: api.joi.v20230331.payruns as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    joiType: api.joi.v20230301.payruns as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 
@@ -90,7 +90,7 @@ const payrunDetails = async ({
 
   return handleResponse<Payslips>({
     response,
-    joiType: api.joi.v20230331.payslips as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    joiType: api.joi.v20230301.payslips as any, // eslint-disable-line @typescript-eslint/no-explicit-any
   });
 };
 

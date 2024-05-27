@@ -16,8 +16,8 @@ const payruns: api.v20230301.Payruns = [
   {
     id: payrunId,
     remote_id: '19202938',
-    run_state: 'paid',
-    run_type: 'regular',
+    state: 'paid',
+    type: 'regular',
     start_date: '2020-01-01',
     end_date: '2020-01-15',
     payment_date: '2020-01-15',
@@ -35,6 +35,9 @@ const payslips: api.v20230301.Payslips = [
     gross_pay: 134267,
     net_pay: 86578,
     start_date: '2020-01-01',
+    employee_remote_id: '100234',
+    payrun_remote_id: '19202938',
+    payrun_type: 'regular',
     end_date: '2020-01-15',
     payment_date: '2020-01-15',
     earnings: [

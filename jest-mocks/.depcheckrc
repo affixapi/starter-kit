@@ -1,7 +1,6 @@
 ignores: [
   '@tsconfig/node20',
   '@types/node',
-  'eslint-plugin-node',
   'ts-node',
   'joi',
   '@types/jest'

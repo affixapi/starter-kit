@@ -27,6 +27,7 @@ const payruns: api.v20230301.Payruns = [
 // NOTE: mock your specific data scenario here!
 const payslips: api.v20230301.Payslips = [
   {
+    reimbursements: null,
     id: 'cD0yMDIxLTAxLTA2KzAzJTNBMjQlM0E1My40MzQzMjYlMkIwMCUzQTAw',
     remote_id: '19202938',
     employee_id: 'd2f972d0-2526-434b-9409-4c3b468e08f0',

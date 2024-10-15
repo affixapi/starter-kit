@@ -32,7 +32,6 @@
     "eslint-config-typescript": "3.0.0",
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "5.1.3",
     "prettier": "3.2.5",
     "@types/joi": "17.2.3",

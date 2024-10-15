@@ -26,9 +26,6 @@ module.exports = {
     'import/no-unresolved': 2,
     'import/order': 2,
     'no-multiple-empty-lines': [2, { max: 1, maxEOF: 0 }],
-    'node/no-missing-import': 'off', // conflicts with typescript absolute imports
-    'node/no-unsupported-features/es-syntax': 'off',
-    'node/shebang': 'off',
     'prettier/prettier': [
       'error',
       {

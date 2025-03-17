@@ -33,7 +33,7 @@ jobs:
           cache: npm
           cache-dependency-path: sdk-example/package-lock.json
 
-      - uses: cycjimmy/semantic-release-action@v4.1.1
+      - uses: cycjimmy/semantic-release-action@v4.2.0
         with:
           working_directory: ./sdk-example
           dry_run: true
@@ -62,7 +62,7 @@ jobs:
           cache: npm
           cache-dependency-path: jest-mocks/package-lock.json
 
-      - uses: cycjimmy/semantic-release-action@v4.1.1
+      - uses: cycjimmy/semantic-release-action@v4.2.0
         with:
           working_directory: ./jest-mocks
           semantic_version: 18

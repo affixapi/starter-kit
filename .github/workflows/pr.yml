@@ -36,7 +36,7 @@ jobs:
 
       - run: make ci
 
-      - uses: cycjimmy/semantic-release-action@v4.2.0
+      - uses: cycjimmy/semantic-release-action@v4.2.1
         with:
           working_directory: ./sdk-example
           dry_run: true
@@ -68,7 +68,7 @@ jobs:
 
       - run: make ci
 
-      - uses: cycjimmy/semantic-release-action@v4.2.0
+      - uses: cycjimmy/semantic-release-action@v4.2.1
         with:
           working_directory: ./jest-mocks
           dry_run: true
